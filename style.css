@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+}
+
+#container {
+    display: flex;
+}
+
+#bookForm {
+    flex: 1;
+    height: calc(100% - 20px);
+    padding: 1rem;
+}
+
+#bookForm div {
+    display: grid;
+    grid-template: 1fr 1fr / repeat(4, 1fr);
+    row-gap: 0.75rem;
+}
+
+#bookForm div label {
+    grid-column: 1 / 2;
+    text-align: center;
+}
+
+#bookForm div input {
+    grid-column: 2 / 5;
+}
+
+#bookForm button {
+    display: block;
+    margin: 10px auto;
+}
+
+#bookList {
+    flex: 4;
+}
