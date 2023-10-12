@@ -35,5 +35,7 @@ body {
 }
 
 #bookList {
+    display: grid;
     flex: 4;
+    grid-template-columns: repeat(4, 1fr);
 }
